@@ -14,8 +14,10 @@ esphome:
     name: "Depressboy.esphome-mly-mppt-ch"
     version: 1.0.1
 
-esp8266:
-  board: d1_mini
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
 
 external_components:
   - source: ${external_components_source}
